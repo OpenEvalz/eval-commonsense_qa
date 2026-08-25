@@ -1,0 +1,45 @@
+{
+  "openevalz_version": 1,
+  "eval": {
+    "id": "commonsense_qa",
+    "slug": "commonsense-qa",
+    "title": "CommonsenseQA: A Question Answering Challenge Targeting Commonsense Knowledge",
+    "group": "Knowledge",
+    "tags": [],
+    "source": "core"
+  },
+  "upstream": {
+    "repo": "https://github.com/UKGovernmentBEIS/inspect_evals",
+    "path": "src/inspect_evals/commonsense_qa",
+    "inspect_ai": "0.3.260",
+    "eval_version": "2-A",
+    "dependency": ""
+  },
+  "execution": {
+    "class": "plain",
+    "cost_class": "medium",
+    "sandbox": null,
+    "requires_internet": false,
+    "fast": true,
+    "supports_k8s": false,
+    "environment": ""
+  },
+  "tasks": [
+    {
+      "name": "commonsense_qa",
+      "samples": 1221
+    }
+  ],
+  "total_samples": 1221,
+  "external_assets": [
+    {
+      "type": "huggingface",
+      "source": "tau/commonsense_qa",
+      "state": "pinned"
+    }
+  ],
+  "scaffolds": [
+    "baseline"
+  ],
+  "generated": "2026-08-25"
+}
